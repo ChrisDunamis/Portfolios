@@ -164,5 +164,4 @@ factorial_value = 5  # Pass the value on here...
 factorial_results = calculate_the_factorial_of_a_number(factorial_value)
 
 print(factorial_results)
-print('-' * 80)
 # -------------------------------------------------------------------------------------------------------------------- #
