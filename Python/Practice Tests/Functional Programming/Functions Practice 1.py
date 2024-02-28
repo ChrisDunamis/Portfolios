@@ -1,4 +1,6 @@
 # ---------------------------------------------------- QUESTION 1 ---------------------------------------------------- #
+print("\n" + "Question 1".center(80, '_'))
+
 """
 (1): Write a Python function to find the maximum of three numbers.
 """
@@ -7,8 +9,7 @@
 def maximum_of_three_numbers1(num1, num2, num3):  # METHOD 1:
     nums_list = num1, num2, num3
 
-    print("\n" + "Question 1".center(80, '_') + "\n" +
-          "Numbers Given:")
+    print("Numbers Given:")
 
     for idx, value in enumerate(nums_list):
         print("|Value {idx}|: {num_value}".format(idx=(idx + 1), num_value=value))
@@ -38,7 +39,7 @@ def maximum_of_three_numbers1(num1, num2, num3):  # METHOD 1:
         "Value 3 = {}".format(num3) + "\n"
 
 
-def maximum_of_three_numbers2(num1, num2, num3):  # METHOD 1:
+def maximum_of_three_numbers2(num1, num2, num3):  # METHOD 2:
     nums_list = (num1, num2, num3)
 
     return max(nums_list)
@@ -56,6 +57,8 @@ print("The maximum number from the List {} is: {:>7}".format(maximum_number, max
 print('-' * 80)
 # -------------------------------------------------------------------------------------------------------------------- #
 # ---------------------------------------------------- QUESTION 2 ---------------------------------------------------- #
+print("Question 2".center(80, '_'))
+
 """
 (2): Write a Python function to sum all the numbers in a list.
      Sample List     : (8, 2, 3, 0, 7)
@@ -76,14 +79,15 @@ def sum_of_numbers(args):
 sum_of_these_values = (8, 2, 3, 0, 7)  # Pass the values on here...
 sum_of_these_values_result = sum_of_numbers(sum_of_these_values)
 
-print("Question 2".center(80, '_') + "\n" +
-      "The sum of", end=' ')
+print("The sum of", end=' ')
 print(*sum_of_these_values, sep=" + ", end=" = ")
 print(sum_of_these_values_result)  # Method 1
 # print(sum(sum_of_these_values))    # Method 2
 print('-' * 80)
 # -------------------------------------------------------------------------------------------------------------------- #
 # ---------------------------------------------------- QUESTION 3 ---------------------------------------------------- #
+print("Question 3".center(80, '_'))
+
 """
 (3): Write a Python function to multiply all the numbers in a list.
      Sample List     : (8, 2, 3, -1, 7)
@@ -105,8 +109,7 @@ multiplier = 1
 multiply_these_values = (8, 2, 3, -1, 7)  # Pass the values on here...
 multiply_these_values_result = multiply_all_numbers(multiply_these_values)
 
-print("Question 3".center(80, '_') + "\n" +
-      "The sum of", end=' ')
+print("The sum of", end=' ')
 print(*multiply_these_values, sep=" * ", end=" = ")
 print(multiply_these_values_result)  # Method 1
 
@@ -117,6 +120,8 @@ for each_number in multiply_these_values:
 print('-' * 80)
 # -------------------------------------------------------------------------------------------------------------------- #
 # ---------------------------------------------------- QUESTION 4 ---------------------------------------------------- #
+print("Question 4".center(80, '_'))
+
 """
 (4): Write a Python program to reverse a string.
      Sample String   : "1234abcd"
@@ -131,12 +136,13 @@ def reverse_string(string):
 string_input = "1234abcd"  # Pass the values on here...
 reversed_string = reverse_string(string_input)
 
-print("Question 4".center(80, '_') + "\n" +
-      "String Input:    {str_input}".format(str_input=string_input) + "\n" +
+print("String Input:    {str_input}".format(str_input=string_input) + "\n" +
       "String Reversed: {str_reversed}".format(str_reversed=reversed_string) + "\n" +
       ('-' * 80))
 # -------------------------------------------------------------------------------------------------------------------- #
 # ---------------------------------------------------- QUESTION 5 ---------------------------------------------------- #
+print("Question 5".center(80, '_'))
+
 """
 (5): Write a Python function to calculate the factorial of a number (a non-negative integer). The function accepts the 
      number as an argument.

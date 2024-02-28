@@ -2,6 +2,8 @@ from random import randint
 
 
 # ---------------------------------------------------- QUESTION 6 ---------------------------------------------------- #
+print("\n" + "Question 6".center(110, '_'))
+
 """
 (6): Write a Python function to check whether a number falls within a given range.
 """
@@ -12,13 +14,13 @@ def number_given_range(num):
     num_range = randint(num1, num2)
 
     if num == 0:
-        return "\n" + "Incorrect!!" + "\n\n" + \
+        return "Incorrect!!" + "\n\n" + \
             \
             "Given Number: {value}".format(value=num) + "\n" + \
             "You have entered the Number: {value}. Please give a value between {value1} - {value2}.".format(
                 value=num, value1=num1, value2=num_range)
     elif num1 <= num <= num_range:
-        return "\n" + "Correct!" + "\n\n" + \
+        return "Correct!" + "\n\n" + \
             \
             "Given Number: {value}".format(value=num) + "\n" + \
             "This is within the range {value1} - {value2}.".format(value1=num1, value2=num_range)
@@ -28,7 +30,7 @@ def number_given_range(num):
     #         "Given Number: {value}".format(value=num) + "\n" + \
     #         "This is not in the range {value1} and {value2}.".format(value1=num1, value2=num_range)
 
-    return "\n" + "Incorrect!!" + "\n\n" + \
+    return "Incorrect!!" + "\n\n" + \
         \
         "Given Number: {value}".format(value=num) + "\n" + \
         "This is a negative number, please give a value between {value1} - {value2}.".format(
@@ -44,6 +46,8 @@ print(user_result)
 print('-' * 110)
 # -------------------------------------------------------------------------------------------------------------------- #
 # ---------------------------------------------------- QUESTION 7 ---------------------------------------------------- #
+print("Question 7".center(110, '_'))
+
 """
 (7): Write a Python function that accepts a string and counts the number of upper and lower case letters.
      Sample String : 'The quick Brow Fox'
@@ -54,7 +58,7 @@ print('-' * 110)
 
 def count_string_characters(input_string):
     """
-    Takes the 'Parameter: (input_string)', as String value(s) from the 'Variable: string'.
+    Takes the "Parameter: input_string", as String value(s) from the "Variable: string".
     """
 
     strings = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"  # Alphabets defined in UPPER and lower cases.
@@ -102,6 +106,8 @@ print("Function - count_string_characters():", count_string_characters.__doc__ +
       ('-' * 110))
 # -------------------------------------------------------------------------------------------------------------------- #
 # ---------------------------------------------------- QUESTION 8 ---------------------------------------------------- #
+print("Question 8".center(110, '_'))
+
 """
 (8): Write a Python function that takes a list and returns a new list with distinct elements from the first list.
      Sample List : [1,2,3,3,3,3,4,5]
@@ -128,6 +134,8 @@ print("Input List:  {}".format(integer_list) + "\n" +
       ('-' * 110))
 # -------------------------------------------------------------------------------------------------------------------- #
 # ---------------------------------------------------- QUESTION 9 ---------------------------------------------------- #
+print("Question 9".center(110, '_'))
+
 """
 (9): Write a Python function that takes a number as a parameter and checks whether the number is prime or not.
      Note : A prime number (or a prime) is a natural number greater than 1 and that has no positive divisors other than 
@@ -160,6 +168,8 @@ print("Input Number: [{value}]".format(value=check_prime_number) + "\n" +
       ('-' * 110))
 # -------------------------------------------------------------------------------------------------------------------- #
 # --------------------------------------------------- QUESTION 10 ---------------------------------------------------- #
+print("Question 10".center(110, '_'))
+
 """
 (10): Write a Python program to print the even numbers from a given list.
       Sample List : [1, 2, 3, 4, 5, 6, 7, 8, 9]
